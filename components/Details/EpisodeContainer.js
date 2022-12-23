@@ -42,11 +42,6 @@ const EpisodeContainer = ({ title, id, number, image }) => {
                 detailsButton={theme.detailsButton}
               >
                 <div className="rounded-full w-1/3 h-full p-1 shadow-2xl">
-                  <img
-                    src={image}
-                    className="h-full rounded-full w-full  object-cover"
-                    alt={id}
-                  />
                 </div>
                 <span className="w-2/3 flex justify-center items-center text-center h-full">
                   Ep -<span className={"font-semibold"}>{index}</span>
