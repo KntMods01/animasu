@@ -37,12 +37,12 @@ const EpisodeContainer = ({ title, id, number, image }) => {
           myArray.map((index) => (
             <Link key={index} href={`/watching/${id}/${index}`}>
               <EpButton
-                className="flex cursor-pointer border-2 rounded-full  relative h-10 lg:h-14 w-24 lg:w-40 shadow-lg hover:scale-105 transition-transform transform duration-300"
+                className="flex cursor-pointer border-2  relative h-10 lg:h-14 w-24 lg:w-40 shadow-lg hover:scale-105 transition-transform transform duration-300"
                 key={index}
                 detailsButton={theme.detailsButton}
               >
                 <span className="w-2/3 flex justify-center items-center text-center h-full">
-                  Ep -<span className={"font-semibold"}>{index}</span>
+                  Ep - <span className={"font-semibold"}>{index}</span>
                 </span>
               </EpButton>
             </Link>
