@@ -31,7 +31,7 @@ const EpisodeContainer = ({ title, id, number, image }) => {
           {number != 0 ? number + " -1" : "Coming Soon"}
         </span>
       </span>
-      <div className="grid grid-cols-3 gap-2 lg:grid-cols-4 py-8 lg:gap-8 w-full md:grid-cols-5 xl:grid-cols-6 text-center">
+      <div className="grid grid-cols-3 gap-2 lg:grid-cols-4 py-8 lg:gap-8 w-full md:grid-cols-5 xl:grid-cols-6 justify-center items-center text-center ">
         {
           (myFunc(),
           myArray.map((index) => (
