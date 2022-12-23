@@ -37,13 +37,6 @@ const DetailsContainer = ({ id, data = [] }) => {
         className={`${theme.background} ${theme.text.selected} w-full  py-20 lg:px-20  lg:py-8 flex justify-center`}
       >
         <div className="w-full lg:w-10/12 flex flex-col justify-center items-center lg:flex-row lg:justify-start lg:items-stretch ">
-          <div className="rounded-lg w-8/12 lg:w-4/12 my-8 lg:my-0 shadow-2xl">
-            <img
-              src={data.image}
-              alt={data.title}
-              className=" w-full h-full rounded-lg object-cover"
-            />
-          </div>
           <div className=" flex flex-col w-11/12 px-0 lg:w-8/12  lg:px-10">
             <div className="flex w-full justify-between py-2">
               <span className="font-bold text-4xl  md:text-5xl  ">
