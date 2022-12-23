@@ -31,13 +31,13 @@ const EpisodeContainer = ({ title, id, number, image }) => {
           {number != 0 ? number + " -1" : "Coming Soon"}
         </span>
       </span>
-      <div className="grid grid-cols-3 gap-2 lg:grid-cols-4 py-8 lg:gap-8 w-full md:grid-cols-5 xl:grid-cols-6">
+      <div className="grid grid-cols-3 gap-2 lg:grid-cols-4 py-8 lg:gap-8 w-full md:grid-cols-5 xl:grid-cols-6 text-center">
         {
           (myFunc(),
           myArray.map((index) => (
             <Link key={index} href={`/watching/${id}/${index}`}>
               <EpButton
-                className="flex cursor-pointer border-2  relative h-10 lg:h-14 w-24 lg:w-40 shadow-lg hover:scale-105 transition-transform transform duration-300"
+                className="flex cursor-pointer border-2 rounded-full  relative h-10 lg:h-14 w-24 lg:w-40 shadow-lg hover:scale-105 transition-transform transform duration-300"
                 key={index}
                 detailsButton={theme.detailsButton}
               >
